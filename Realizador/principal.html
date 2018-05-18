@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+    <link REL=StyleSheet HREF="principal.css" TITLE="Estilos">
+    <script src="video.js"></script>
+    <title> Realizador de TV </title>
+  </head>
+  <body>
+    <h1 id="Titulo"> Super Reality </h1>
+    <div id="player">
+      <video id="Video1" src="Video1.mp4"></video>
+      <video id="Video2" onclick="change(this)" src="Video1.mp4" muted></video>
+      <video id="Video3" onclick="change(this)" src="Video2.mp4" muted></video>
+      <video id="Video4" onclick="change(this)" src="Video3.mp4" muted></video>
+    </div>
+    <button id="Boton" onclick="playpause()">play / pause</button>
+  </body>
+</html>

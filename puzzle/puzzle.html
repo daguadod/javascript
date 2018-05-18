@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+    <link REL=StyleSheet HREF="styles.css" TITLE="Estilos">
+  </head>
+  <body>
+    <div id="pictures">
+      <script src="animation.js"></script>
+      <script src="cronometro.js"></script>
+      <img id="picture1" src="mr-robot1.jpg" onclick="pepe.myCanvas('picture1')"></img>
+      <img id="picture2" src="mr-robot2.jpg" onclick="pepe.myCanvas('picture2')"></img>
+      <img id="picture3" src="mr-robot3.jpg" onclick="pepe.myCanvas('picture3')"></img><br><br>
+      <button id="mybutton" onclick="changeImages()">Change images</button><br><br><br>
+      <canvas id="canvas" onclick="pepe.move(event)"></canvas>
+    </div>
+    <div id="contenedor">
+  		<div class="reloj" id="Horas">00</div>
+  		<div class="reloj" id="Minutos">:00</div>
+  		<div class="reloj" id="Segundos">:00</div>
+  		<div class="reloj" id="Centesimas">:00</div>
+  	</div>
+  </body>
+</html>
