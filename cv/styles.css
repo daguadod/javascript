@@ -1,0 +1,48 @@
+
+html{
+  font-family: monospace;
+}
+body{
+  background-color: blue;
+}
+h1{
+  font-size:50px;
+  color: White;
+  text-align: center;
+}
+h2{
+  float: center;
+  color:White;
+  font-size:30px;
+  padding-left: 20%;
+}
+table{
+  width: 15%;
+  float: left;
+}
+tr{
+  background-color: Grey;
+}
+th{
+  text-align: left;
+  color: blue;
+  font-size:30px;
+}
+td{
+  font-family: monospace;
+  color: blue;
+}
+p{
+  padding-left: 20%;
+  float: center;
+  color: white;
+}
+.name{
+  text-decoration: underline;
+}
+img{
+  width: 100%;
+}
+.image{
+  background-color: blue;
+}
