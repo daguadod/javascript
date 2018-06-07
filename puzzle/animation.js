@@ -26,6 +26,7 @@ var pepe = {
     this.randomPieces();
     this.draw();
     inicio();
+    document.addEventListener(moveNumber, "keydown");
   },
 
   draw : function () {
@@ -132,7 +133,7 @@ var pepe = {
     for (var i = 0; i < 9; i++) {
       do {
         var num = Math.floor(Math.random() * 9);
-      } while (this.repeat(num));
+      } while (this.repeat(num) && this.board[i] === 9);
       this.board[i] = num;
     }
   },
@@ -145,5 +146,52 @@ var pepe = {
       }
     }
     return rep;
+  }
+}
+
+function moveNumber (event) {
+  // 97 ... 105 → event.keyCode
+  var ev = {
+    offsetX : "",
+    offsetY : ""
+  };
+  if (event.keyCode === 97) { // 1
+    ev.offsetX = 50;
+    ev.offsetY = 250;
+    pepe.move(ev);
+  } else if (event.keyCode === 98) { // 2
+    ev.offsetX = 150;
+    ev.offsetY = 250;
+    pepe.move(ev);
+  } else if (event.keyCode === 99) { // 3
+    ev.offsetX = 250;
+    ev.offsetY = 250;
+    pepe.move(ev);
+  } else if (event.keyCode === 100) { // 4
+    ev.offsetX = 50;
+    ev.offsetY = 150;
+    pepe.move(ev);
+  } else if (event.keyCode === 101) { // 5
+    ev.offsetX = 150;
+    ev.offsetY = 150;
+    pepe.move(ev);
+  } else if (event.keyCode === 102) { // 6
+    ev.offsetX = 250;
+    ev.offsetY = 150;
+    pepe.move(ev);
+  } else if (event.keyCode === 103) { // 7
+    ev.offsetX = 50;
+    ev.offsetY = 50;
+    pepe.move(ev);
+  } else if (event.keyCode === 104) { // 8
+    ev.offsetX = 150;
+    ev.offsetY = 50;
+    pepe.move(ev);
+  } else if (event.keyCode === 105) { // 9
+    ev.offsetX = 250;
+    ev.offsetY = 50;
+    pepe.move(ev);
+  } else { // resto
+    //
   }
 }
